@@ -1,5 +1,21 @@
 @import 'tailwindcss';
-/* @plugin 'daisyui'; */
+@plugin 'daisyui'{
+    // DaisyUI themes configuration
+    // https://daisyui.com/docs/themes/
+    // Default theme is light, dark is for prefers-color-scheme, cupcake is an additional theme
+    // You can add more themes or customize existing ones
+    // For more themes, refer to https://daisyui.com/docs/themes/
+    // To use a custom theme, you can define it in your Tailwind CSS configuration
+    // or use the daisyUI theme utility classes in your HTML
+    // Example: <div class="theme-light">...</div>
+    // Example: <div class="theme-dark">...</div>
+    // Example: <div class="theme-cupcake">...</div>
+    // You can also use the daisyUI theme switcher to toggle between themes
+    // Example: <button class="btn btn-primary" data-theme="dark">Toggle Dark Mode</button>
+    // For more information, refer to the daisyUI documentation
+
+  themes: all;
+};
 
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 @source '../../storage/framework/views/*.php';

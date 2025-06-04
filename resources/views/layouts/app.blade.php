@@ -9,7 +9,7 @@
     @vite('resources/css/app.css')
 </head>
 
-<body>
+<body data-theme="light" class="bg-white text-gray-900">
     @include('components.navbar')
     <main class="pt-16">
         @yield('content')
