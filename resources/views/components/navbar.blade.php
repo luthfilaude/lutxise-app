@@ -11,75 +11,7 @@
                     </svg>
                 </a>
             </div>
-
-            {{-- <div class="md:flex md:items-center md:gap-12">
-        <nav aria-label="Global" class="hidden md:block">
-          <ul class="flex items-center gap-6 text-sm">
-            <li>
-              <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> About </a>
-            </li>
-
-            <li>
-              <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> Careers </a>
-            </li>
-
-            <li>
-              <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> History </a>
-            </li>
-
-            <li>
-              <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> Services </a>
-            </li>
-
-            <li>
-              <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> Projects </a>
-            </li>
-
-            <li>
-              <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> Blog </a>
-            </li>
-          </ul>
-        </nav>
-
-        <div class="flex items-center gap-4">
-          <div class="sm:flex sm:gap-4">
-            <a
-              class="rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white shadow-sm"
-              href="#"
-            >
-              Login
-            </a>
-
-            <div class="hidden sm:flex">
-              <a
-                class="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600"
-                href="#"
-              >
-                Register
-              </a>
-            </div>
-          </div>
-
-          <div class="block md:hidden">
-            <button
-              class="rounded-sm bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="size-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-            </button>
-          </div>
-        </div>
-    </div> --}}
             <div x-data="{ open: false }" class="md:flex md:items-center md:gap-12">
-
                 <!-- Navigation -->
                 <nav aria-label="Global" class="hidden md:block">
                     <ul class="flex items-center gap-6 text-sm">
@@ -103,39 +35,6 @@
                         </li>
                     </ul>
                 </nav>
-                <!-- Mobile Menu -->
-                {{-- <div :class="{ 'block': open, 'hidden': !open }" x-show="open" @click.away="open = false"
-                    @keydown.escape.window="open = false"
-                    class="absolute inset-x-0 top-full z-50 bg-white shadow-lg border-t border-gray-200 transition-all md:hidden">
-                    <nav aria-label="Mobile" class="p-4">
-                        <ul class="flex flex-col space-y-3 text-md text-center">
-                            <li>
-                                <a class="block px-4 py-2 rounded hover:bg-gray-100 text-gray-700 transition"
-                                    href="#">About</a>
-                            </li>
-                            <li>
-                                <a class="block px-4 py-2 rounded hover:bg-gray-100 text-gray-700 transition"
-                                    href="#">Careers</a>
-                            </li>
-                            <li>
-                                <a class="block px-4 py-2 rounded hover:bg-gray-100 text-gray-700 transition"
-                                    href="#">History</a>
-                            </li>
-                            <li>
-                                <a class="block px-4 py-2 rounded hover:bg-gray-100 text-gray-700 transition"
-                                    href="#">Services</a>
-                            </li>
-                            <li>
-                                <a class="block px-4 py-2 rounded hover:bg-gray-100 text-gray-700 transition"
-                                    href="#">Projects</a>
-                            </li>
-                            <li>
-                                <a class="block px-4 py-2 rounded hover:bg-gray-100 text-gray-700 transition"
-                                    href="#">Blog</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div> --}}
                 <div :class="{ 'block': open, 'hidden': !open }" x-show="open" @click.away="open = false"
                     @keydown.escape.window="open = false"
                     class="absolute inset-x-0 top-full z-50 bg-white shadow-lg border-t border-gray-200 transition-all md:hidden">
@@ -200,11 +99,6 @@
                             <li>
                                 <a href="#"
                                     class="flex items-center gap-2 rounded-lg px-4 py-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700">
-                                    {{-- <svg xmlns="http://www.w3.org/2000/svg" class="size-5 opacity-75 shadow-sm"
-                                        fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                                    </svg> --}}
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                         stroke-width="1.5" stroke="currentColor" class="size-5 opacity-75 shadow-sm">
                                         <path stroke-linecap="round" stroke-linejoin="round"
@@ -247,24 +141,31 @@
                 <div class="flex items-center gap-4">
                     <div class="sm:flex sm:gap-4">
                         <div class="hidden sm:flex">
-                            <a class="rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white shadow-sm"
+                            <a class="transition duration-300 ease-in-out inline-block rounded-sm border border-teal-600 bg-teal-600 px-5 py-2.5 text-sm font-medium text-white hover:bg-transparent hover:text-teal-600 focus:ring-3 focus:outline-hidden"
                                 href="#">
                                 Login
                             </a>
                         </div>
 
                         <div class="hidden sm:flex">
-                            <button
-                                class="btn btn-outline btn-accent rounded-md px-5 py-2.5 text-sm font-medium">Register</button>
+                            <a class="transition duration-300 ease-in-out inline-block rounded-sm border border-teal-600 px-5 py-2.5 text-sm font-medium text-teal-600 hover:bg-teal-600 hover:text-white focus:ring-3 focus:outline-hidden"
+                                href="#">
+                                Register
+                            </a>
                         </div>
                     </div>
                     <!-- Hamburger Button -->
                     <div class="block md:hidden">
                         <button @click="open = !open"
                             class="rounded-sm bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="size-5" fill="none"
+                            <svg x-show="!open" xmlns="http://www.w3.org/2000/svg" class="size-5" fill="none"
                                 viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+
+                            <svg x-show="open" xmlns="http://www.w3.org/2000/svg" class="size-5" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                             </svg>
                         </button>
                     </div>
